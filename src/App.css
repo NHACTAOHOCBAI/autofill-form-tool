@@ -1,0 +1,117 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #007acc 0%, #005a9e 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.app-header p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.app-nav {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 20px;
+  display: flex;
+  gap: 0;
+}
+
+.app-nav button {
+  padding: 16px 24px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.app-nav button:hover {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.app-nav button.active {
+  color: #007acc;
+  border-bottom-color: #007acc;
+  background: #f8f9fa;
+}
+
+.app-main {
+  padding: 20px;
+  min-height: calc(100vh - 200px);
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.coming-soon h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.coming-soon p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Global button styles */
+button {
+  font-family: inherit;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 30px 15px;
+  }
+  
+  .app-header h1 {
+    font-size: 24px;
+  }
+  
+  .app-nav {
+    padding: 0 15px;
+    overflow-x: auto;
+  }
+  
+  .app-nav button {
+    white-space: nowrap;
+    padding: 14px 20px;
+  }
+  
+  .app-main {
+    padding: 15px;
+  }
+}
